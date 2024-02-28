@@ -70,7 +70,7 @@ function CountryList({ countries, heading }) {
     setRecordsData([...initialRecords?.slice(from, to)]);
   }, [page, pageSize, initialRecords]);
 
-  const showHideColumns = (col, value) => {
+  const showHideColumns = (col) => {
     if (hideCols.includes(col)) {
       setHideCols((col) => hideCols.filter((d) => d !== col));
     } else {
