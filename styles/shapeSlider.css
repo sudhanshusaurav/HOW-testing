@@ -1,0 +1,69 @@
+.shapeSlider .swiper-wrapper .swiper-slide {
+  @apply transition-all duration-1000;
+}
+
+.shapeSlider .swiper-wrapper .swiper-slide:nth-child(3) {
+  @apply lg:mt-[8%] 2xl:mt-[10%];
+}
+
+.shapeSlider .swiper-wrapper .swiper-slide:nth-child(4) {
+  @apply lg:mt-[7%] 2xl:mt-[8%];
+}
+
+.shapeSlider .swiper-wrapper .swiper-slide:nth-child(5) {
+  @apply lg:mt-[6%] 2xl:mt-[8%];
+}
+
+.shapeSlider .swiper-wrapper .swiper-slide:nth-child(6) {
+  @apply lg:mt-[8%] 2xl:mt-[10.5%];
+}
+
+.shapeSlider .swiper-wrapper .swiper-slide:nth-child(7) {
+  @apply lg:mt-[12%] 2xl:mt-[15%];
+}
+
+.shapeSlider .swiper-wrapper .swiper-slide:nth-child(8) {
+  @apply lg:mt-[17%] 2xl:mt-[20%];
+}
+
+.shapeSlider .swiper-wrapper .swiper-slide:nth-child(9) {
+  @apply lg:mt-[21%] 2xl:mt-[24%];
+}
+
+.shapeSlider .swiper-wrapper .swiper-slide:nth-child(10) {
+  @apply lg:mt-[22%] 2xl:mt-[25%];
+}
+
+.shapeSlider .swiper-wrapper .swiper-slide:nth-child(11) {
+  @apply lg:mt-[20%] 2xl:mt-[22%];
+}
+
+/* ================================================================ */
+
+.shapeSlider-static .swiper-wrapper .swiper-slide:nth-child(1) {
+  @apply lg:mt-[7%] 2xl:mt-[8%];
+}
+
+.shapeSlider-static .swiper-wrapper .swiper-slide:nth-child(2) {
+  @apply lg:mt-[6%] 2xl:mt-[8%];
+}
+
+.shapeSlider-static .swiper-wrapper .swiper-slide:nth-child(3) {
+  @apply lg:mt-[8%] 2xl:mt-[10.5%];
+}
+
+.shapeSlider-static .swiper-wrapper .swiper-slide:nth-child(4) {
+  @apply lg:mt-[12%] 2xl:mt-[15%];
+}
+
+.shapeSlider-static .swiper-wrapper .swiper-slide:nth-child(5) {
+  @apply lg:mt-[17%] 2xl:mt-[20%];
+}
+
+.shapeSlider-static .swiper-wrapper .swiper-slide:nth-child(6) {
+  @apply lg:mt-[21%] 2xl:mt-[24%];
+}
+
+.shapeSlider-static .swiper-wrapper .swiper-slide:nth-child(7) {
+  @apply lg:mt-[22%] 2xl:mt-[25%];
+}

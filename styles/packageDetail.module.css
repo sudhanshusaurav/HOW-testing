@@ -1,0 +1,11 @@
+.highlights li {
+  @apply relative my-1 pl-5 after:absolute after:left-0 after:top-0 after:text-p-sm after:text-primary after:content-['\279C'];
+}
+
+.inclusions li {
+  @apply relative my-1 pl-5 after:absolute after:left-0 after:top-0 after:text-p-sm after:text-secondary after:content-['\2714'];
+}
+
+.exclusions li {
+  @apply relative my-1 pl-5 after:absolute after:left-0 after:top-0 after:text-p-sm after:text-red-500 after:content-['\2718'];
+}
