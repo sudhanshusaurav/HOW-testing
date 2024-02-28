@@ -67,7 +67,7 @@ function CountryList({ countries, heading }) {
   useEffect(() => {
     const from = (page - 1) * pageSize;
     const to = from + pageSize;
-    setRecordsData([...initialRecords.slice(from, to)]);
+    setRecordsData([...initialRecords?.slice(from, to)]);
   }, [page, pageSize, initialRecords]);
 
   const showHideColumns = (col, value) => {
