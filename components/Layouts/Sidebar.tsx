@@ -117,53 +117,6 @@ const Sidebar = () => {
                 <button
                   type="button"
                   className={`${
-                    currentMenu === "dashboard" ? "active" : ""
-                  } nav-link group w-full`}
-                  onClick={() => toggleMenu("dashboard")}
-                >
-                  <div className="flex items-center">
-                    <IconMenuDashboard className="shrink-0 group-hover:!text-primary" />
-                    <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">
-                      {"dashboard"}
-                    </span>
-                  </div>
-
-                  <div
-                    className={
-                      currentMenu !== "dashboard"
-                        ? "-rotate-90 rtl:rotate-90"
-                        : ""
-                    }
-                  >
-                    <IconCaretDown />
-                  </div>
-                </button>
-
-                <AnimateHeight
-                  duration={300}
-                  height={currentMenu === "dashboard" ? "auto" : 0}
-                >
-                  <ul className="sub-menu text-gray-500">
-                    <li>
-                      <Link href="/">{"sales"}</Link>
-                    </li>
-                    <li>
-                      <Link href="/analytics">{"analytics"}</Link>
-                    </li>
-                    <li>
-                      <Link href="/finance">{"finance"}</Link>
-                    </li>
-                    <li>
-                      <Link href="/crypto">{"crypto"}</Link>
-                    </li>
-                  </ul>
-                </AnimateHeight>
-              </li>
-
-              <li className="menu nav-item">
-                <button
-                  type="button"
-                  className={`${
                     currentMenu === "crm" ? "active" : ""
                   } nav-link group w-full`}
                   onClick={() => toggleMenu("crm")}
@@ -192,59 +145,6 @@ const Sidebar = () => {
                     <li>
                       <Link href="/admin/countries">{"Countries"}</Link>
                     </li>
-                    <li>
-                      <Link href="/admin/states">{"States"}</Link>
-                    </li>
-                    <li>
-                      <Link href="/admin/destinations">{"Destinations"}</Link>
-                    </li>
-                    <li>
-                      <Link href="/admin/stays">{"Stays"}</Link>
-                    </li>
-                    <li>
-                      <Link href="/admin/activities">{"Activities"}</Link>
-                    </li>
-                    <li>
-                      <Link href="/admin/categories">{"Categories"}</Link>
-                    </li>
-                  </ul>
-                </AnimateHeight>
-              </li>
-
-              <li className="menu nav-item">
-                <button
-                  type="button"
-                  className={`${
-                    currentMenu === "configure" ? "active" : ""
-                  } nav-link group w-full`}
-                  onClick={() => toggleMenu("configure")}
-                >
-                  <div className="flex items-center">
-                    <IconMenuDashboard className="shrink-0 group-hover:!text-primary" />
-                    <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">
-                      {"Configure"}
-                    </span>
-                  </div>
-
-                  <div
-                    className={
-                      currentMenu !== "configure"
-                        ? "-rotate-90 rtl:rotate-90"
-                        : ""
-                    }
-                  >
-                    <IconCaretDown />
-                  </div>
-                </button>
-
-                <AnimateHeight
-                  duration={300}
-                  height={currentMenu === "configure" ? "auto" : 0}
-                >
-                  <ul className="sub-menu text-gray-500">
-                    <li>
-                      <Link href="/admin/configure/UI">{"Front UI"}</Link>
-                    </li>
                   </ul>
                 </AnimateHeight>
               </li>
@@ -254,49 +154,10 @@ const Sidebar = () => {
                 <span>{"Package Manager"}</span>
               </h2>
 
-              <li className="nav-item">
-                <ul>
-                  <li className="nav-item">
-                    <Link href="/admin/packages" className="group">
-                      <div className="flex items-center">
-                        <IconMenuChat className="shrink-0 group-hover:!text-primary" />
-                        <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">
-                          {"Packages"}
-                        </span>
-                      </div>
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link href="/admin/customized-packages" className="group">
-                      <div className="flex items-center">
-                        <IconMenuChat className="shrink-0 group-hover:!text-primary" />
-                        <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">
-                          {"Customized Packages"}
-                        </span>
-                      </div>
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-
               <h2 className="-mx-4 mb-1 flex items-center bg-white-light/30 px-7 py-3 font-extrabold uppercase text-gray-500 dark:bg-dark dark:bg-opacity-[0.08]">
                 <IconMinus className="hidden h-5 w-4 flex-none" />
                 <span>{"Lead Manager"}</span>
               </h2>
-              <li className="nav-item">
-                <ul>
-                  <li className="nav-item">
-                    <Link href="/admin/leads" className="group">
-                      <div className="flex items-center">
-                        <IconMenuChat className="shrink-0 group-hover:!text-primary" />
-                        <span className="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">
-                          {"Leads"}
-                        </span>
-                      </div>
-                    </Link>
-                  </li>
-                </ul>
-              </li>
             </ul>
           </PerfectScrollbar>
         </div>
